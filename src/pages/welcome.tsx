@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { Button } from "components/Button/Button"
 
 export default function Web() {
   return (

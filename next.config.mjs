@@ -8,6 +8,10 @@ import { env } from "./env.mjs"
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   reactStrictMode: true,
   experimental: { instrumentationHook: true },
+  swcMinify: true,
+  images: {
+    domains: ["cdn.sanity.io"],
+  },
   rewrites() {
     return [
       { source: "/healthz", destination: "/api/health" },
