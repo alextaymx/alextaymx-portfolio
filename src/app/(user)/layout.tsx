@@ -1,4 +1,4 @@
-import "@styles/globals.css"
+import "@/styles/tailwind.css"
 
 import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from "next"
@@ -12,6 +12,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>
       <body className={`bg-white dark:bg-slate-950`}>
+        <main id="content">{children}</main>
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
         <Analytics />
