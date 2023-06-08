@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react"
 import { AppProps } from "next/app"
-import MyApp from "./_app"
+import HomePage from "@/app/page"
 
 // Mock router object with required properties
 const router = {
@@ -22,8 +22,7 @@ describe("MyApp", () => {
       pageProps: { title: "Test Page" },
       router: router as never, // Include mocked router object in props
     }
-    const { getByText } = render(<MyApp {...props} />)
-    expect(getByText("Test Component")).toBeInTheDocument()
-    expect(getByText("Test Page")).toBeInTheDocument()
+    const { getByText } = render(<HomePage />)
+    expect(getByText("Portfolio")).toBeInTheDocument()
   })
 })

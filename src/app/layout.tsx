@@ -2,17 +2,35 @@ import "@/styles/tailwind.css"
 
 import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from "next"
+import localFont from "next/font/local"
+
 import type { PropsWithChildren } from "react"
+import Header from "@/components/Header/Header"
 import { personJsonLd, websiteJsonLd } from "@/lib/config/jsonLd"
+
+const agustina = localFont({
+  src: "../../public/assets/fonts/Agustina.woff",
+  // src: [{ path: "../../public/assets/fonts/Agustina.woff" }],
+  variable: "--font-agustina", // https://stackoverflow.com/questions/74607996/how-to-add-custom-local-fonts-to-a-nextjs-13-tailwind-project
+})
+
+const montserratRegular = localFont({
+  src: "../../public/assets/fonts/Montserrat-Regular.ttf",
+  variable: "--font-montserrat-regular",
+})
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${agustina.variable} ${montserratRegular.variable}`}>
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>
       <body className={`bg-white dark:bg-slate-950`}>
-        <main id="content">{children}</main>
+        <Header />
+
+        <main id="content" className="relative mx-auto mb-16 max-w-4xl px-8 py-24">
+          {children}
+        </main>
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />

@@ -29,6 +29,10 @@ module.exports = {
           800: "#1e40af",
           900: "#1e3a8a",
         },
+        accent: {
+          // gray color
+          DEFAULT: "#4b5563",
+        },
       },
       fontFamily: {
         body: [
@@ -49,6 +53,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
         sans: [
+          "var(--font-montserrat-regular)",
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -65,6 +70,9 @@ module.exports = {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
+        agustina: ["var(--font-agustina)"],
+
+        splash: ["var(--font-splash)"],
       },
       borderWidth: {
         DEFAULT: "1px",

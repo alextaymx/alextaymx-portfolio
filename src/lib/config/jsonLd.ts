@@ -17,14 +17,17 @@ export const personJsonLd = {
   alternateName: "Alex Tay Mao Xiang",
   url: "https://alextay.vercel.app/",
   jobTitle: [
-    "Intermediate Software Engineer",
+    "Full-Stack",
     "Software Engineer",
+    "Intermediate Software Engineer",
     "Frontend Engineer",
     "Front-End Developer",
     "Fullstack Engineer",
-    "Full-Stack Developer",
     "Web Developer",
   ],
+  bio: `Hi there! I am Alex! I've been coding for over 4 years now. As a Full Stack developer I've worked both with
+  startups and medium corporations to help build & scale their projects. I am eager to be challenged in order
+  to grow and further improve my skills.`,
   hasOccupation: {
     "@type": "Occupation",
     name: "Software Engineer",
@@ -42,6 +45,7 @@ export const personJsonLd = {
         // percentile90: "106",
       },
     ],
+
     description: "Develops web applications and websites using TypeScript, React and HTML5.",
     skills:
       "HTML5, CSS, JavaScript, React, Sass, Less, Node.js, Express.js, Vue.js, Next.js, JavaScript Frameworks, Git, Github, NPM, SEO, CMS, WordPress, E-Commerce",

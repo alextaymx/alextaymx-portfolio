@@ -6,8 +6,6 @@ Welcome to this _Next.js 13 Project_! It's loaded with features that'll build a 
 
 ## 📚 Features
 
-With this template, you get all the awesomeness you need:
-
 - 🏎️ **[Next.js](https://nextjs.org/)** - Fast by default, with config optimized for performance
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development
 - ✨ **[ESlint](https://eslint.org/)** and **[Prettier](https://prettier.io/)** - For clean, consistent, and error-free code
@@ -63,7 +61,7 @@ To get started with this boilerplate, follow these steps:
 
 ```bash
 ## Don't forget to ⭐ star and fork it first :)
-git clone https://github.com/<your_username)/next-enterprise.git
+git clone https://github.com/<your_username)/alextaymx-portfolio.git
 ```
 
 2. Install the dependencies:

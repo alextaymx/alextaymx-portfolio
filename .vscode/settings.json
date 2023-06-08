@@ -1,5 +1,16 @@
 {
   "tailwindCSS.experimental.classRegex": [
     ["cva(?:<[^>]*>)?(([^)]*))", "[\"'`]([^\"'`]*).*?[\"'`]", "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"]
-  ]
+  ],
+  "search.exclude": {
+    ".next": true,
+    "node_modules": true,
+    "package-lock.json": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // "source.addMissingImports",
+    // "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  }
 }

@@ -64,6 +64,7 @@ module.exports = {
         },
       },
     ],
+    "@typescript-eslint/ban-types": "warn",
   },
 }
 
