@@ -36,6 +36,7 @@ module.exports = {
       },
       fontFamily: {
         body: [
+          "var(--font-montserrat-regular)",
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -71,7 +72,6 @@ module.exports = {
           "Noto Color Emoji",
         ],
         agustina: ["var(--font-agustina)"],
-
         splash: ["var(--font-splash)"],
       },
       borderWidth: {
