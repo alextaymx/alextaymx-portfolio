@@ -7,9 +7,13 @@ export const env = createEnv({
       .enum(["true", "false"])
       .optional()
       .transform((value) => value === "true"),
+    OPENAI_API_KEY: z.string().optional(),
   },
-  client: {},
+  client: {
+    NEXT_PUBLIC_DEPLOY_TO_VERCEL_SHORTCUT: z.string().optional(),
+  },
   runtimeEnv: {
     ANALYZE: process.env.ANALYZE,
+    NEXT_PUBLIC_DEPLOY_TO_VERCEL_SHORTCUT: process.env.NEXT_PUBLIC_DEPLOY_TO_VERCEL_SHORTCUT,
   },
 })
