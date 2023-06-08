@@ -5,6 +5,7 @@ import { Metadata } from "next"
 import localFont from "next/font/local"
 
 import type { PropsWithChildren } from "react"
+import { Footer } from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
 import { personJsonLd, websiteJsonLd } from "@/lib/config/jsonLd"
 
@@ -26,12 +27,14 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>
       <body className={`bg-white dark:bg-slate-950`}>
+        {/* content */}
         <Header />
-
         <main id="content" className="relative mx-auto mb-16 max-w-4xl px-8 py-24">
           {children}
         </main>
+        <Footer />
 
+        {/* extras */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
         <Analytics />

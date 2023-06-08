@@ -27,7 +27,7 @@ function GreetingHero(props: Props) {
           // className="rounded-full"
           loading="eager"
           priority
-          className="aspect-[4/3] max-w-full rounded-2xl object-cover md:h-56 md:w-56 lg:max-w-none "
+          className="max-w-full rounded-2xl object-cover md:h-56 md:w-56 lg:max-w-none "
         />
       </div>
       <div className="flex gap-6">
