@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header {
-  @apply fixed inset-x-0 top-0 z-40 bg-white/80 shadow-sm saturate-[1.8] backdrop-blur-[10px] dark:bg-black/80 dark:saturate-100;
+  @apply fixed inset-x-0 top-0 z-40 bg-white bg-opacity-50 shadow-sm saturate-[1.8] backdrop-blur-lg backdrop-filter dark:bg-black/80 dark:saturate-100;
   max-width: 100%;
 
   /*

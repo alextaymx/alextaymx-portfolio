@@ -1,5 +1,5 @@
+import HeaderLogo from "@/components/Icon/HeaderLogo"
 import Navbar from "@/components/Nav/Navbar"
-import HeaderLogo from "../Icon/HeaderLogo"
 // import CommandMenu from "@/components/command-menu"
 // import MobileNav from "@/components/mobile-nav"
 

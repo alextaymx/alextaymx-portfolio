@@ -5,8 +5,10 @@ import { Metadata } from "next"
 import localFont from "next/font/local"
 
 import type { PropsWithChildren } from "react"
-import { Footer } from "@/components/Footer/Footer"
-import Header from "@/components/Header/Header"
+import { BackgroundBlob } from "@/components/layout/Background"
+import { Footer } from "@/components/layout/Footer/Footer"
+import Header from "@/components/layout/Header/Header"
+import { SkipToContent } from "@/components/ScreenReader/SkipToContent"
 import { personJsonLd, websiteJsonLd } from "@/lib/config/jsonLd"
 
 const agustina = localFont({
@@ -28,6 +30,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
       </head>
       <body className={`bg-white dark:bg-slate-950`}>
         {/* content */}
+
+        <div className="pointer-events-none absolute my-auto w-full max-w-[1920px] overflow-hidden md:top-[-90%]">
+          <BackgroundBlob />
+        </div>
+        <SkipToContent />
+
         <Header />
         <main id="content" className="relative mx-auto mb-16 max-w-4xl px-8 py-24">
           {children}
