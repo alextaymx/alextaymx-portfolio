@@ -16,12 +16,23 @@
   .logo {
     @apply float-left mt-[10px] block flex-none font-mono text-sm leading-normal text-gray-400;
     text-decoration: none;
+
+    &:hover,
+    &:active {
+      @apply bg-gradient-to-r from-orange-400 to-pink-300 bg-clip-text text-transparent;
+    }
   }
+
   .logo-name {
     @apply font-agustina text-2xl font-bold text-black;
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-variant-ligatures: no-common-ligatures;
     padding: 0 10px;
+
+    &:hover,
+    &:active {
+      @apply bg-gradient-to-r from-orange-400 to-pink-300 bg-clip-text font-bold text-transparent;
+    }
   }
 }
 

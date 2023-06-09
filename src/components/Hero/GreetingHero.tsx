@@ -1,6 +1,6 @@
 import { differenceInYears, formatDistanceToNowStrict } from "date-fns"
-import Image from "next/image"
 import React from "react"
+import Image from "@/components/Image/Image"
 import { personJsonLd } from "@/lib/config/jsonLd"
 import profilePic from "@/public/assets/images/alex-avatar.jpg"
 import GreetingTitle from "./GreetingTitle"

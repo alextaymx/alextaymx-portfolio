@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import GreetingHero from "@/components/Hero/GreetingHero"
+import Resume from "@/components/organisms/resume/Resume"
 
 export const metadata: Metadata = {
   title: "Alex Tay's Personal Website",
@@ -39,6 +40,7 @@ const HomePage = () => {
   return (
     <>
       <GreetingHero />
+      <Resume />
     </>
   )
 }

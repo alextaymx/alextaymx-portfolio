@@ -7,10 +7,19 @@
     "node_modules": true,
     "package-lock.json": true
   },
+  "files.autoSave": "onFocusChange",
+  "files.refactoring.autoSave": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     // "source.addMissingImports",
     // "source.organizeImports": true,
     "source.fixAll.eslint": true
+  },
+
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
