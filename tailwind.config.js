@@ -17,22 +17,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
-        },
-        accent: {
-          // gray color
-          DEFAULT: "#4b5563",
-        },
+        // primary: {
+        //   50: "#eff6ff",
+        //   100: "#dbeafe",
+        //   200: "#bfdbfe",
+        //   300: "#93c5fd",
+        //   400: "#60a5fa",
+        //   500: "#3b82f6",
+        //   600: "#2563eb",
+        //   700: "#1d4ed8",
+        //   800: "#1e40af",
+        //   900: "#1e3a8a",
+        // },
+        // accent: {
+        //   // gray color
+        //   DEFAULT: "#4b5563",
+        // },
       },
       fontFamily: {
         body: [
@@ -91,7 +91,32 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#14213D",
+
+          secondary: "#6E6E6E",
+
+          accent: "#FCA311",
+
+          neutral: "#000000",
+
+          "base-100": "#FFFFFF",
+
+          info: "#118ab2",
+
+          success: "#06d6a0",
+
+          warning: "#ffd166",
+
+          error: "#ef476f",
+        },
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
   future: {
     hoverOnlyWhenSupported: true,
   },

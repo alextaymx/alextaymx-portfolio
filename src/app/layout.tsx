@@ -5,10 +5,10 @@ import { Metadata } from "next"
 import localFont from "next/font/local"
 
 import type { PropsWithChildren } from "react"
-import { BackgroundBlob } from "@/components/layout/Background"
-import { Footer } from "@/components/layout/Footer/Footer"
-import Header from "@/components/layout/Header/Header"
-import { SkipToContent } from "@/components/ScreenReader/SkipToContent"
+import { SkipToContent } from "@/components/atoms/ScreenReader/SkipToContent"
+import { BackgroundBlob } from "@/components/molecules/layout/Background"
+import { Footer } from "@/components/molecules/layout/Footer/Footer"
+import Header from "@/components/molecules/layout/Header/Header"
 import { personJsonLd, websiteJsonLd } from "@/lib/config/jsonLd"
 
 const agustina = localFont({
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>
-      <body className={`bg-white dark:bg-slate-950`}>
+      <body className={`min-h-screen bg-white dark:bg-slate-950`}>
         {/* content */}
 
         <div className="pointer-events-none absolute my-auto w-full max-w-[1920px] overflow-hidden md:top-[-90%]">

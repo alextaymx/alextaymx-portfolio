@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  @apply bg-[#dbe4f9] text-black;
+  /* background: #dbe4f9; */
+}
+
 .header {
   @apply fixed inset-x-0 top-0 z-40 bg-white;
   @apply shadow-sm saturate-[1.8];

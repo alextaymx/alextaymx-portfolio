@@ -1,10 +1,10 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
-import { SocialIcons } from "@/components/Icon/SocialIcons"
+import { SocialIcons } from "@/components/atoms/Icon/SocialIcons"
 import { personJsonLd } from "@/lib/config/jsonLd"
 
 const Footer = () => {
   return (
-    <footer className="relative mx-auto mt-8 max-w-4xl px-8 py-6 md:mt-20">
+    <footer className="relative mx-auto mt-8 max-w-4xl px-8 py-6 text-secondary md:mt-20">
       <div className="flex justify-between">
         <span>
           &copy; {new Date().getFullYear()} {personJsonLd.name}

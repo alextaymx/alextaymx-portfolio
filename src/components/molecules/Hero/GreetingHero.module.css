@@ -1,0 +1,5 @@
+.avatar {
+  @apply max-w-full rounded-2xl object-cover md:h-56 md:w-56 lg:max-w-none;
+  @apply transition-transform delay-75 duration-500 hover:scale-110;
+  @apply select-none;
+}

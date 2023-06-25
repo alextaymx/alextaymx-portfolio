@@ -1,8 +1,9 @@
 import { differenceInYears, formatDistanceToNowStrict } from "date-fns"
 import React from "react"
-import Image from "@/components/Image/Image"
+import Image from "@/components/atoms/Image/Image"
 import { personJsonLd } from "@/lib/config/jsonLd"
 import profilePic from "@/public/assets/images/alex-avatar.jpg"
+import styles from "./GreetingHero.module.css"
 import GreetingTitle from "./GreetingTitle"
 
 type Props = {}
@@ -12,14 +13,14 @@ function GreetingHero(props: Props) {
   const age = differenceInYears(new Date(), birthdate) // use date-fns to calculate age
 
   return (
-    <section className="space-y-6 md:my-16">
+    <section className="space-y-6 text-primary md:my-16">
       <div className="flex flex-col gap-10 md:flex-row md:justify-between md:gap-2">
         <div className="space-y-4 md:max-w-lg">
           <GreetingTitle />
-          <h2 className="text-lg font-medium text-accent">
+          <h2 className="text-lg font-medium">
             {age} years old • {personJsonLd.jobTitle[0]} • {personJsonLd.jobTitle[1]}
           </h2>
-          <p className="text-justify text-lg">{personJsonLd.bio}</p>
+          <p className="text-justify text-lg text-secondary">{personJsonLd.bio}</p>
         </div>
         <Image
           src={profilePic}
@@ -27,7 +28,7 @@ function GreetingHero(props: Props) {
           // className="rounded-full"
           loading="eager"
           priority
-          className="max-w-full rounded-2xl object-cover md:h-56 md:w-56 lg:max-w-none "
+          className={styles.avatar}
         />
       </div>
       <div className="flex gap-6">

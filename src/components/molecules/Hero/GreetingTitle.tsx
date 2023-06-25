@@ -1,6 +1,6 @@
 import React from "react"
 import { personJsonLd } from "@/lib/config/jsonLd"
-import WaveEmoji from "../Icon/WaveEmoji"
+import WaveEmoji from "../../atoms/Icon/WaveEmoji"
 
 type Props = {}
 
