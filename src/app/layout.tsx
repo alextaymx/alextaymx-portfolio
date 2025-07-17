@@ -17,14 +17,14 @@ const agustina = localFont({
   variable: "--font-agustina", // https://stackoverflow.com/questions/74607996/how-to-add-custom-local-fonts-to-a-nextjs-13-tailwind-project
 })
 
-const montserratRegular = localFont({
+const montserrat = localFont({
   src: "../../public/assets/fonts/Montserrat-Regular.ttf",
-  variable: "--font-montserrat-regular",
+  variable: "--font-montserrat",
 })
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" className={`${agustina.className} ${montserratRegular.className}`}>
+    <html lang="en" className={`${agustina.className} ${montserrat.className}`}>
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>

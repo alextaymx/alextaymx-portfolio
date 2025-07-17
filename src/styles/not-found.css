@@ -25,7 +25,7 @@
 }
 
 .notfound .notfound-404 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 230px;
   margin: 0px;
   font-weight: 900;
@@ -42,7 +42,7 @@
 }
 
 .notfound h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
   color: #000;
   font-size: 24px;
   font-weight: 700;
@@ -51,7 +51,7 @@
 }
 
 .notfound p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -60,7 +60,7 @@
 }
 
 .notfound a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;

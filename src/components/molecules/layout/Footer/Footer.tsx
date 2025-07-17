@@ -4,7 +4,7 @@ import { personJsonLd } from "@/lib/config/jsonLd"
 
 const Footer = () => {
   return (
-    <footer className="text-secondary relative mx-auto mt-8 max-w-4xl px-8 py-6 md:mt-20">
+    <footer className="text-gray-500 relative mx-auto mt-8 max-w-4xl px-8 py-6 md:mt-20">
       <div className="flex justify-between">
         <span>
           &copy; {new Date().getFullYear()} {personJsonLd.name}

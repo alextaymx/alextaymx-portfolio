@@ -1,5 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  /* themes: light --default, dark --prefersdark; */
+  themes: false;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -15,8 +18,8 @@
   --color-primary-800: #1e40af;
   --color-primary-900: #1e3a8a;
 
-  --font-agustina: var(--font-agustina);
-  --font-montserrat-regular: var(--font-montserrat-regular);
+  --font-agustina: agustina, agustina Fallback;
+  --font-montserrat: montserrat, montserrat Fallback;
 }
 
 ::selection {
@@ -46,8 +49,8 @@
   }
 
   .logo-name {
-    @apply text-2xl font-bold text-black;
-    font-family: var(--font-agustina);  
+    @apply font-agustina text-2xl font-bold text-black;
+    /* font-family: var(--font-agustina);   */
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-variant-ligatures: no-common-ligatures;
     padding: 0 10px;

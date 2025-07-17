@@ -20,7 +20,7 @@ function GreetingHero(props: Props) {
           <h2 className="text-lg font-medium">
             {age} years old • {personJsonLd.jobTitle[0]} • {personJsonLd.jobTitle[1]}
           </h2>
-          <p className="text-secondary text-justify text-lg">{personJsonLd.bio}</p>
+          <p className="text-gray-500 text-justify text-lg">{personJsonLd.bio}</p>
         </div>
         <Image
           src={profilePic}

@@ -21,6 +21,7 @@
     "postcss": "css"
   },
   "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.css-language-features"
   }
 }
