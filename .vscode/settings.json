@@ -1,6 +1,10 @@
 {
   "tailwindCSS.experimental.classRegex": [
-    ["cva(?:<[^>]*>)?(([^)]*))", "[\"'`]([^\"'`]*).*?[\"'`]", "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"]
+    [
+      "cva(?:<[^>]*>)?(([^)]*))",
+      "[\"'`]([^\"'`]*).*?[\"'`]",
+      "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"
+    ]
   ],
   "search.exclude": {
     ".next": true,
@@ -11,11 +15,8 @@
   "files.refactoring.autoSave": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    // "source.addMissingImports",
-    // "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
-
   "emmet.includeLanguages": {
     "postcss": "css"
   },
