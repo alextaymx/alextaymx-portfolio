@@ -17,7 +17,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "postinstall": "npx patch-package -y",
     "preinstall": "npx only-allow yarn",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|test/e2e/|README.md|.eslintrc.js' --image graph.svg"
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.ts|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|test/e2e/|README.md|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.4.1",
@@ -63,7 +63,7 @@
     "@opentelemetry/sdk-trace-node": "2.0.1",
     "@opentelemetry/semantic-conventions": "1.36.0",
     "@playwright/test": "^1.52.0",
-    "@tailwindcss/postcss": "^4.1.5",
+    "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^16.3.0",
     "@total-typescript/ts-reset": "^0.6.1",
@@ -90,8 +90,8 @@
     "postcss-import": "^16.1.0",
     "postinstall-postinstall": "^2.1.0",
     "prettier": "latest",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.1.5",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4.1.11",
     "ts-jest": "^29.3.2",
     "tsc": "^2.0.4",
     "typed-query-selector": "^2.12.0",
