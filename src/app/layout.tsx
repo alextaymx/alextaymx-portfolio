@@ -24,7 +24,7 @@ const montserratRegular = localFont({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" className={`${agustina.variable} ${montserratRegular.variable}`}>
+    <html lang="en" className={`${agustina.className} ${montserratRegular.className}`}>
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg" />
       </head>

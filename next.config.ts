@@ -1,7 +1,7 @@
 import withBundleAnalyzer from "@next/bundle-analyzer"
 import { type NextConfig } from "next"
 
-const ANALYZE = process.env.ANALYZE === "true";
+const ANALYZE = process.env.ANALYZE === "true"
 
 const config: NextConfig = {
   reactStrictMode: true,
