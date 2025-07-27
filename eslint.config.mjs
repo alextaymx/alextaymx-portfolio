@@ -54,10 +54,23 @@ const config = typescriptEslint.config(
           varsIgnorePattern: "^_",
         },
       ],
-      '@typescript-eslint/no-empty-object-type': [
+      "@typescript-eslint/no-empty-object-type": [
         "warn",
         {},
       ],
+      // Formatting rules that ESLint can auto-fix
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "quotes": ["error", "double", { "avoidEscape": true }],
+      "semi": ["error", "never"],
+      "comma-dangle": ["error", "always-multiline"],
+      "object-curly-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "never"],
+      "space-before-blocks": ["error", "always"],
+      "keyword-spacing": ["error", { "before": true, "after": true }],
+      "space-infix-ops": ["error"],
+      "eol-last": ["error", "always"],
+      "no-trailing-spaces": ["error"],
+      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
       "sort-imports": [
         "error",
         {
@@ -96,7 +109,7 @@ const config = typescriptEslint.config(
         },
       ],
     },
-  }
+  },
 )
 
 function getDirectoriesToSort() {

@@ -12,7 +12,6 @@ Welcome to this _Next.js 13 Project_! It's loaded with features that'll build a 
 - 🛠️ **[Extremely strict TypeScript](https://www.typescriptlang.org/)** - With [`ts-reset`](https://github.com/total-typescript/ts-reset) library for ultimate type safety
 - 📊 **[Bundle analyzer plugin](https://www.npmjs.com/package/@next/bundle-analyzer)** - Keep an eye on your bundle size
 - 🧪 **[Jest](https://jestjs.io/)** and **[React Testing Library](https://testing-library.com/react)** - For rock-solid unit and integration tests
-- 🎭 **[Playwright](https://playwright.dev/)** - Write end-to-end tests like a pro
 - 🌬️ **Smoke Testing** and **Acceptance Tests** - For confidence in your deployments
 - 📝 **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Keep your commit history neat and tidy
 - 🔍 **[Observability](https://opentelemetry.io/)** - Open Telemetry integration for seamless monitoring
@@ -39,8 +38,6 @@ Welcome to this _Next.js 13 Project_! It's loaded with features that'll build a 
   - [🔗 Coupling Graph](#-coupling-graph)
   - [🧪 Testing](#-testing)
     - [Running Tests](#running-tests)
-    - [Acceptance Tests](#acceptance-tests)
-    - [Smoke Testing](#smoke-testing)
   - [🎨 Styling and Design System](#-styling-and-design-system)
     - [CVA - A New Approach to Variants](#cva---a-new-approach-to-variants)
   - [💾 State Management](#-state-management)
@@ -128,8 +125,6 @@ This boilerplate comes with various testing setups to ensure your application's 
 ### Running Tests
 
 - **Unit and integration tests**: Run Jest tests using `yarn test`
-- **End-to-end tests (headless mode)**: Run Playwright tests in headless mode with `yarn e2e:headless`
-- **End-to-end tests (UI mode)**: Run Playwright tests with UI using `yarn e2e:ui`
 
 <img width="1392" alt="image" src="https://user-images.githubusercontent.com/28964599/233666655-93b7d08b-2fd8-406a-b43c-44d4d96cf387.png">
 

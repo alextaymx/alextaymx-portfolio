@@ -1,9 +1,12 @@
 import withBundleAnalyzer from "@next/bundle-analyzer"
 import { type NextConfig } from "next"
+import createNextIntlPlugin from "next-intl/plugin"
 
 const ANALYZE = process.env.ANALYZE === "true"
 
-const config: NextConfig = {
+const withNextIntl = createNextIntlPlugin()
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   logging: {
     fetches: {
@@ -11,14 +14,12 @@ const config: NextConfig = {
     },
   },
   images: {
-    domains: ["cdn.sanity.io"],
+    domains: [],
   },
-  rewrites: async () => [
-    { source: "/healthz", destination: "/api/health" },
-    { source: "/api/healthz", destination: "/api/health" },
-    { source: "/health", destination: "/api/health" },
-    { source: "/ping", destination: "/api/health" },
-  ],
 }
 
-export default ANALYZE ? withBundleAnalyzer({ enabled: ANALYZE })(config) : config
+const withLocaleConfig = withNextIntl(nextConfig)
+
+const withBundleAnalyzerConfig = withBundleAnalyzer({ enabled: ANALYZE })(withLocaleConfig)
+
+export default withBundleAnalyzerConfig

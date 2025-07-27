@@ -9,7 +9,7 @@ const config = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testEnvironment: "jest-environment-jsdom",
 
-  moduleDirectories: ["node_modules", __dirname],
+  moduleDirectories: ["node_modules", "<rootDir>"],
   watchPlugins: [],
 
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
