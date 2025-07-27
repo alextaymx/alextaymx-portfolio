@@ -13,7 +13,7 @@
     "analyze": "cross-env ANALYZE=true yarn build",
     "test": "cross-env FORCE_COLOR=1 jest --passWithNoTests",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "postinstall": "npx patch-package -y",
+    "postinstall": "npx patch-package -y && npm rebuild @tailwindcss/postcss",
     "preinstall": "",
     "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.ts|reset.d.ts|prettier.config.js|postcss.config.js|next.config.js|next-env.d.ts|instrumentation.ts|test/e2e/|README.md|.eslintrc.js' --image graph.svg"
   },
@@ -126,5 +126,8 @@
     "@types/react-dom": "19.1.6",
     "glob": "^11.0.0",
     "rimraf": "^6.0.1"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/postcss": "^4.1.11"
   }
 }
