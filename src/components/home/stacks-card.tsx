@@ -3,30 +3,33 @@
 import {
   SiCloudflare,
   SiCss,
-  SiDrizzle,
+  SiDocker,
   SiFigma,
   SiFirebase,
+  SiFlutter,
   SiGit,
+  SiGooglecloud,
+  SiGraphql,
   SiHtml5,
   SiJavascript,
   SiMarkdown,
-  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
-  SiPrisma,
   SiPython,
   SiRadixui,
   SiReact,
-  SiReactquery,
   SiTailwindcss,
   SiTypescript,
   SiVite,
   SiVitest,
 } from "@icons-pack/react-simple-icons"
 import { ZapIcon } from "lucide-react"
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { Marquee } from "@/components/ui/marquee"
+import AwsCloudLogoSvg from "@/public/assets/images/logo/AWS-Cloud-logo_32.svg"
+import AwsCloudLogoDarkSvg from "@/public/assets/images/logo/AWS-Cloud-logo_32_Dark.svg"
 
 const StacksCard = () => {
   const t = useTranslations()
@@ -51,17 +54,17 @@ const StacksCard = () => {
         <SiRadixui className='size-10' />
       </Marquee>
       <Marquee gap='20px' className='py-4' reverse fade pauseOnHover>
-        <SiPrisma className='size-10' />
-        <SiMysql className='size-10' />
+        <Image draggable="false" src={AwsCloudLogoSvg} alt='AWS Cloud Logo' className='size-10 select-none' />
+        <SiFlutter className='size-10' />
+        <SiDocker className='size-10' />
         <SiFirebase className='size-10' />
         <SiGit className='size-10' />
         <SiVite className='size-10' />
-        <SiDrizzle className='size-10' />
+        <SiGraphql className='size-10' />
         <SiCloudflare className='size-10' />
         <SiMarkdown className='size-10' />
         <SiVitest className='size-10' />
         <SiNodedotjs className='size-10' />
-        <SiReactquery className='size-10' />
       </Marquee>
     </div>
   )
