@@ -170,6 +170,8 @@
   "homepage": {
     "about-me": {
       "coding-hours": "Experience",
+      "coding-hours-days": "days",
+      "coding-hours-years": "years",
       "connect": "Connect",
       "fav-framework": "Fav. framework",
       "location": "Malaysia",

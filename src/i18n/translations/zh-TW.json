@@ -170,6 +170,8 @@
   "homepage": {
     "about-me": {
       "coding-hours": "工作經驗",
+      "coding-hours-days": "天",
+      "coding-hours-years": "年",
       "connect": "聯繫",
       "fav-framework": "最愛框架",
       "location": "馬來西亞",
