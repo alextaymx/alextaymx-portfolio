@@ -1,7 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import localFont from "next/font/local"
 import { notFound } from "next/navigation"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
@@ -118,15 +117,28 @@ export const viewport: Viewport = {
   ],
 }
 
-const fontSans = Geist({
-  subsets: ["latin"],
+const fontSans = localFont({
+  src: [
+    {
+      path: "../../../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
   variable: "--font-sans",
+  display: "swap",
 })
 
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
+const fontMono = localFont({
+  src: [
+    {
+      path: "../../../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
   variable: "--font-mono",
-  weight: "400",
+  display: "swap",
 })
 
 const fontAgustina = localFont({
